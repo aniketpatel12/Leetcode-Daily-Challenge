@@ -6,7 +6,7 @@ For an integer array nums, an inverse pair is a pair of integers
 
 Given two integers n and k, return the number of different arrays consist 
 of numbers from 1 to n such that there are exactly k inverse pairs. 
-Since the answer can be huge, return it modulo 109 + 7.
+Since the answer can be huge, return it modulo 10**9 + 7.
 
 '''
 
@@ -18,6 +18,7 @@ M = 10**9 + 7
 
 cache = {}
 def count(n, k):
+    
     # base case
     if n == 0:
       return 1 if k == 0 else 0
