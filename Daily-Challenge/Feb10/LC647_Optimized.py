@@ -31,12 +31,10 @@ class Solution:
 
         for i in range(len(s)):
             # odd-length substrings
-            l = r = i
-            ans += countPalindrome(s, l, r)
+            ans += countPalindrome(s, i, i)
 
              # even-length substrings
-            l = i
-            r = i + 1
-            ans += countPalindrome(s, l, r)
+            ans += countPalindrome(s, i, i+1)
 
         return ans
+
